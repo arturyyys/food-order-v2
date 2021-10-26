@@ -4,7 +4,7 @@ import classes from "./Checkout.module.css";
 const Checkout = (props) => {
   const nameInputRef = useRef();
   const streetInputRef = useRef();
-  const postalInputRef = useRef();
+  const postalCodeInputRef = useRef();
   const cityInputRef = useRef();
 
   const confirmHandler = (event) => {
@@ -12,7 +12,7 @@ const Checkout = (props) => {
 
     const enteredName = nameInputRef.current.value;
     const enteredStreet = streetInputRef.current.value;
-    const enteredPostal = postalInputRef.current.value;
+    const enteredPostalCode = postalCodeInputRef.current.value;
     const enteredCity = cityInputRef.current.value;
   };
 
@@ -28,7 +28,7 @@ const Checkout = (props) => {
       </div>
       <div className={classes.control}>
         <label htmlFor='postal'>Postal Code</label>
-        <input type='text' id='postal' ref={postalInputRef} />
+        <input type='text' id='postal' ref={postalCodeInputRef} />
       </div>
       <div className={classes.control}>
         <label htmlFor='city'>City</label>
