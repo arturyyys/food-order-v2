@@ -102,5 +102,3 @@ const Checkout = (props) => {
 };
 
 export default Checkout;
-
-// fix it
